@@ -2,6 +2,7 @@ module Main where
 
 import System.Environment
 import qualified Day1.Part1
+import qualified Day1.Part2
 
 main :: IO ()
 main = do
@@ -9,4 +10,5 @@ main = do
   input <- readFile file
   case (day, part) of
     ("1", "1") -> putStrLn (Day1.Part1.solve input)
+    ("1", "2") -> putStrLn (Day1.Part2.solve input)
     _ -> putStrLn ("Day " ++ day ++ ", part " ++ part ++ " is unsolved")

@@ -1,4 +1,4 @@
-module Day1.Part1 where
+module Day1.Part1 (solve) where
 
 import Data.Maybe
 import Text.Read

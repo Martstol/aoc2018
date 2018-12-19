@@ -13,13 +13,15 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Day1.Part1
+                     , Day1.Part2
   build-depends:       base >= 4.7 && < 5
+                     , unordered-containers
   default-language:    Haskell2010
 
 executable aoc2018
   hs-source-dirs:      app
   main-is:             Main.hs
-  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N1
   build-depends:       base
                      , aoc2018
   default-language:    Haskell2010
@@ -32,7 +34,7 @@ test-suite aoc2018-test
                      , aoc2018
                      , hspec
                      , QuickCheck
-  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N1
   default-language:    Haskell2010
 
 source-repository head
