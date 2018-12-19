@@ -1,9 +1,8 @@
 module Day1.Part2Spec where
 
+import Day1.Part2
 import Test.Hspec
 import Test.QuickCheck
-
-import Day1.Part2
 
 main :: IO ()
 main = hspec spec
